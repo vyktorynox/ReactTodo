@@ -105,7 +105,9 @@ export var startLogin = () => {
 export var startLogout = () => {
   return (dispatch, getState) => {
     firebase.auth().signOut().then(
-      (success) => {console.log('Logged out!', success);},
+      (success) => {console.log('Logged out!', success
+
+    );},
       (error) => {console.log('Unable to auth', error);}
     );
   };
